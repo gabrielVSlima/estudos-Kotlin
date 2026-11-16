@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rodar Kotlin",
+      "type": "shell",
+      "command": "/c/kotlinc/bin/kotlinc \"${fileBasename}\" -include-runtime -d \"${fileBasenameNoExtension}.jar\" && java -jar \"${fileBasenameNoExtension}.jar\"",
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "C:\\Users\\gabriel.lima\\AppData\\Local\\Programs\\Git\\usr\\bin\\bash.exe",
+          "args": ["-l", "-c"]
+        }
+      },
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "shared", "focus": true }
+    }
+  ]
+}
