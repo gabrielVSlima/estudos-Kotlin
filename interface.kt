@@ -2,7 +2,7 @@ import javax.swing.JOptionPane
 
 fun main (args: Array<String>){
     //Pede o nome do usuario 
-    val nome = JOptionPane.showInputDialog("Digite seu nome")
+    val nome = JOptiononPane.showInputDialog("Digite seu nome")
 
     //concatena o o nome do usuario na mensagem
 
