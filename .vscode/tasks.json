@@ -4,7 +4,7 @@
     {
       "label": "Rodar Kotlin",
       "type": "shell",
-      "command": "/c/kotlinc/bin/kotlinc \"${fileBasename}\" -include-runtime -d \"${fileBasenameNoExtension}.jar\" && java -jar \"${fileBasenameNoExtension}.jar\"",
+      "command": "mkdir -p ../out && /c/kotlinc/bin/kotlinc \"${fileBasename}\" -include-runtime -d \"../out/${fileBasenameNoExtension}.jar\" && java -jar \"../out/${fileBasenameNoExtension}.jar\"",
       "options": {
         "cwd": "${fileDirname}",
         "shell": {
